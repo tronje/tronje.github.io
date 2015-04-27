@@ -310,6 +310,10 @@ a.github {
 	background: url(../images/octocat-small.png) no-repeat 1px;
 }
 
+a.xing {
+    background: url(../images/xing-icon.png) no-repeat 1px;
+}
+
 a.email {
   background: url(../images/email.png) no-repeat 1px;
 }
