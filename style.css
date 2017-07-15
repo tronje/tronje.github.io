@@ -1,0 +1,137 @@
+body {
+    margin: 0 auto;
+    font-family: sans-serif;
+    line-height: 1.4;
+    background-color: #f5f5f5;
+}
+
+header {
+    color: #f5f5f5;
+    background-color: #404040;
+    margin: auto;
+    background-image: url("img/hamburg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    line-height: 1.2;
+    max-width: none;
+    padding: 10vw 2em;
+    text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
+
+}
+
+.fadein {
+    -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+header h1 {
+    font-size: 5em;
+}
+
+header h5 {
+    font-size: 1.5em;
+}
+
+.container {
+    max-width: 65em;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+aside {
+    float: left;
+    clear: left;
+    line-height: 1.8;
+    padding-right: 2em;
+}
+
+main {
+    overflow: auto;
+    padding-left: 3em;
+    border-left: 1px solid #cd6532;
+    max-width: 45em;
+}
+
+footer {
+    text-align: center;
+    color: #666666;
+    padding: 5em;
+}
+
+a {
+    color: #cd5832;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cd7232;
+}
+
+div.wrapper {
+    display: grid;
+    grid-template-columns: 20% 40% 30%;
+    grid-gap: 10px;
+}
+
+div.elem {
+    padding-bottom: 2em;
+}
+
+div.location {
+    text-align: right;
+}
+
+div.spacer {
+    padding-top: 1em;
+}
+
+.bio-icon {
+    color: #cd5832;
+}
+
+.ed-icon {
+    color: #ffa500;
+}
+
+.work-icon {
+    color: #72bcd4;
+}
+
+.code-icon {
+    color: #32cd32;
+}

@@ -1,104 +1,112 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Tronje</title>
+    <!-- I don't usually do much html. Don't judge. -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Tronje Krabbe">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-<body>
-<div class="wrapper">
-  <header>
-    <h1 class="header"><a href="./index.html">Tronje</a></h1>
-    <p class="header">Software Developer</p>
+        <title>tron.je</title>
 
-    <ul>
-      <li><a class="buttons" href="./more.html">More about me</a></li>
-      <li><a class="buttons github" href="https://github.com/tronje">GitHub Profile</a></li>
-      <li><a class="buttons xing" href="https://www.xing.com/profile/Tronje_Krabbe">Xing Profile</a></li>
-      <li><a class="buttons email" href="mailto:tronje@informatik.uni-hamburg.de">Email me</a></li>
-      <li><a class="buttons jabber" href="xmpp:12krabbe@jabber.mafiasi.de">Jabber me</a></li>
-    </ul>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="misc/font-awesome-4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="fadein">
+            <h1>Tronje Krabbe</h1>
+            <h5>coder &bull; computer scientist &bull; evidently not a web designer</h5>
+        </header>
+        <div class="container">
+            <aside>
+                <h3>Info</h3>
+                <span class="fa fa-birthday-cake fa-fw fadein" aria-hidden="true"></span> August 11, 1994<br />
+                <span class="fa fa-map-marker fa-fw fadein" aria-hidden="true"></span> Hamburg, Germany<br />
+                <span class="fa fa-globe fa-fw fadein" aria-hidden="true"></span> <a href="https://tron.je">https://tron.je</a><br />
+                <span class="fa fa-github fa-fw fadein" aria-hidden="true"></span> <a href="https://github.com/tronje">github.com/tronje</a><br />
 
-  </header>
+                <h3>Contact</h3>
+                <span class="fa fa-mobile fa-fw fadein" aria-hidden="true"></span> +49 151 70028781<br />
+                <span class="fa fa-envelope fa-fw fadein" aria-hidden="true"></span> <a href="mailto:hi@tron.je">hi@tron.je</a><br />
 
-  <section>
-    <h1>
-      At a glance
-    </h1>
+                <h3>Communication</h3>
+                <span class="fa fa-comment fa-fw fadein" aria-hidden="true"></span> german: native speaker<br />
+                <span class="fa fa-comments fa-fw fadein" aria-hidden="true"></span> english: fluent<br />
+                <span class="fa fa-comments-o fa-fw fadein" aria-hidden="true"></span> spanish: enough to order a beer<br />
 
-    <h2>
-    <a id="things-im-good-at" class="anchor" href="#things-i-know" aria-hidden="true"><span class="octicon octicon-link"></span></a>Things I'm good at</h2>
+                <h3>Technologies</h3>
+                <span class="fa fa-code fa-fw fadein" aria-hidden="true"></span> Python, C, Rust,...<br />
+                <span class="fa fa-database fa-fw fadein" aria-hidden="true"></span> SQLite, PostgreSQL<br />
+                <span class="fa fa-terminal fa-fw fadein" aria-hidden="true"></span> git, Linux, sh, systemd, ...<br />
+            </aside>
+            <main>
+                <h2><span class="fa fa-commenting-o fa-fw bio-icon fadein" aria-hidden="true"></span> Bio</h2>
+                <p>My name's Tronje, I'm 22 years old, and I love programming, and computer science in general. I'm always
+                looking for interesting new challenges, and if you're looking for someone who values clean, readable and efficient
+                code, as well as good communication and teamwork, feel free to get in touch!
 
-    <ul>
-    <li>C <code>[OpenMP, MPI]</code></li>
-    <li>Python <code>[numpy, Cython]</code></li>
-    <li>git</li>
-    <li>GNU/Linux</li>
-    </ul>
+                <p>I've explored quite a few different programming languages; I'd say I'm most comfortable and efficient with Python.
+                Though, at the moment, the language I'm having the most fun with is Rust. I don't mind terribly which language is used for a project,
+                as long as it isn't PHP. Or COBOL, I guess.
 
-    <h2>
-    <a id="things-im-okay-at" class="anchor" href="#things-i-know" aria-hidden="true"><span class="octicon octicon-link"></span></a>Things I'm okay at</h2>
+                <p>My OS of choice is Linux. At home I use Arch Linux for everything; I'm comfortable navigating the Linux userland,
+                working on a Linux system, and deploying software on one.
 
-    <code>Read: things I'm striving to be good at</code>
-    <ul>
-    <li>Rust</li>
-    <li>Go</li>
-    <li>C++</li>
-    <li>JavaScript &amp; WebGL</li>
-    <li>html, css</li>
-    </ul>
+                <p>In my freetime I cook with a passion, write sometimes silly, sometimes cool code, and pretend like I'm a movie critic.
 
-    <h2>
-    <a id="tools-i-like" class="anchor" href="#tools-i-like" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tools I like</h2>
+                <div class="spacer"><!-- don't judge, remember? --></div>
 
-    <ul>
-    <li>git</li>
-    <li>Cargo</li>
-    <li>make</li>
-    <li>cmake</li>
-    <li>gdb</li>
-    <li>valgrind</li>
-    <li>vim</li>
-    <li>...and many more standard and non-standard Unix and non-Unix tools!</li>
-    </ul>
-
-
-    <h2>
-    <a id="things-i-like-having-on-my-system" class="anchor" href="#things-i-like-having-on-my-system" aria-hidden="true"><span class="octicon octicon-link"></span></a>Things I like having on my system</h2>
-
-    <ul>
-    <li>Archlinux</li>
-    <li>zsh</li>
-    <li>i3 or bspwm</li>
-    <li>vim or emacs</li>
-    </ul>
-
-    <h2>
-    <a id="things-i-do-in-my-freetime" class="anchor" href="#things-i-do-in-my-freetime" aria-hidden="true"><span class="octicon octicon-link"></span></a>Things I do in my freetime</h2>
-
-    <ul>
-    <li>code</li>
-    <li>cook</li>
-    <li>video games</li>
-    </ul>
-  </section>
-  <footer>
-    <p><small>
-      Copyright &copy; Tronje Krabbe
-      <br>
-      <br>
-      Hosted on <a href="http://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
-   </footer>
-</div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-		
-</body>
+                <h2><span class="fa fa-graduation-cap fa-fw ed-icon fadein" aria-hidden="true"></span> Education</h2>
+                <div class="wrapper">
+                    <div class="elem">2012 - present</div>
+                    <div class="elem">
+                        <b>Bachelor of Science</b><br />
+                        'Informatik', i.e. computer science
+                    </div>
+                    <div class="elem location"><i>University of Hamburg</i></div>
+    
+                    <div class="elem">2009 - 2010</div>
+                    <div class="elem"><b>Highschool</b><br \><i>international student</i></div>
+                    <div class="elem location"><i>Parkland Secondary, Canada</i></div>
+    
+                    <div class="elem">2004 - 2012</div>
+                    <div class="elem">
+                        <b>Secondary School</b><br \>
+                        <i>skipped 8th grade</i>
+                    </div>
+                    <div class="elem location"><i>Gym. Grootmoor, Hamburg</i></div>
+                </div>
+    
+                <h2><span class="fa fa-briefcase fa-fw work-icon fadein" aria-hidden="true"></span> Experience</h2>
+                <div class="wrapper">
+                    <div class="elem">09/2015 - present</div>
+                    <div class="elem">
+                        <b>NXP Semiconductors</b><br />
+                        Working student<br />
+                        Python, Cython, Qt<br />
+                        data analysis software, cryptography
+                    </div>
+                    <div class="elem location"><i>Hamburg</i></div>
+    
+                    <div class="elem">2012 - 2013</div>
+                    <div class="elem">
+                        <b>t8y.com</b><br \>
+                        Junior developer<br />
+                        HTML-emails
+                    </div>
+                    <div class="elem location">Hamburg</div>
+                </div>
+    
+                <h2><span class="fa fa-code fa-fw code-icon fadein" aria-hidden="true"></span> Projects</h2>
+                You can find lots of small projects and code samples on my
+                <a href="https://github.com/tronje"><span class="fa fa-github" aria-hidden="true"></span> github profile</a>,
+                as well as some katas at
+                <a href="https://gist.github.com/tronje"><span class="fa fa-github" aria-hidden="true"></span> gist.github.com/tronje</a>.
+            </main>
+        </div>
+        <footer>
+            <span class="fa fa-camera" aria-hidden="true"></span>
+            <a href="http://unsplash.com/@ro_ka?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">
+                Photo by Robert Katzki on Unsplash
+            </a>
+        </footer>
+    </body>
 </html>
