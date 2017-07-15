@@ -9,16 +9,15 @@ header {
     color: #f5f5f5;
     background-color: #404040;
     margin: auto;
-    background-image: url("img/hamburg.jpg");
-    background-position: center;
+    background-image: url("img/hamburg.png");
+    background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
     line-height: 1.2;
-    max-width: none;
     padding: 10vw 2em;
     text-shadow: -1px 0 grey, 0 1px grey, 1px 0 grey, 0 -1px grey;
-
 }
 
 .fadein {
