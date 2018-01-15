@@ -127,14 +127,18 @@
         var age_span = document.getElementById("my_age");
         var date = new Date();
 
+        // either it's August, but before the 11th, or it's not yet August
         // `getMonth` returns 0 for January, 1 for Febuary, etc.
-        if (date.getMonth() < 7) {
+        // `getDate` returns the day of the month. Of course.
+        var condition = (date.getMonth() == 7 && date.getDate() < 11) || date.getMonth() < 7;
+
+        // subtract my birth year, plus one extra if I didn't have a birthday this year yet
+        if (condition) {
             // `getYear` returns the current year minus 1900. Obviously.
             age_span.innerHTML = date.getYear() - 95;
         } else {
             age_span.innerHTML = date.getYear() - 94;
         }
-        console.log(date.getMonth());
     </script>
     </body>
 </html>
