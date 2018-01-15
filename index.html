@@ -34,14 +34,15 @@
                 <span class="fa fa-comments-o fa-fw fadein" aria-hidden="true"></span> spanish: enough to order a beer<br />
 
                 <h3>Technologies</h3>
-                <span class="fa fa-code fa-fw fadein" aria-hidden="true"></span> Python, C, Rust,...<br />
+                <span class="fa fa-code fa-fw fadein" aria-hidden="true"></span> Python, C, Rust, ...<br />
                 <span class="fa fa-database fa-fw fadein" aria-hidden="true"></span> SQLite, PostgreSQL<br />
                 <span class="fa fa-terminal fa-fw fadein" aria-hidden="true"></span> git, Linux, sh, systemd, ...<br />
             </aside>
             <main>
                 <h2><span class="fa fa-commenting-o fa-fw bio-icon fadein" aria-hidden="true"></span> Bio</h2>
-                <p>My name's Tronje, I'm 22 years old, and I love programming, and computer science in general. I'm always
-                looking for interesting new challenges, and if you're looking for someone who values clean, readable and efficient
+                <p>My name's Tronje, I'm <span id="my_age">my age is automatically inserted here with javascript</span> years old,
+                and I love programming, and computer science in general.
+                I'm always looking for interesting new challenges, and if you're looking for someone who values clean, readable and efficient
                 code, as well as good communication and teamwork, feel free to get in touch!
 
                 <p>I've explored quite a few different programming languages; I'd say I'm most comfortable and efficient with Python.
@@ -78,7 +79,16 @@
     
                 <h2><span class="fa fa-briefcase fa-fw work-icon fadein" aria-hidden="true"></span> Experience</h2>
                 <div class="wrapper">
-                    <div class="elem">09/2015 - present</div>
+                    <div class="elem">10/2017 - present</div>
+                    <div class="elem">
+                        <b>PhraseApp</b><br />
+                        Working Student<br />
+                        Ruby/Rails, Go<br />
+                        Customer support, web development
+                    </div>
+                    <div class="elem location"><i>Hamburg</i></div>
+
+                    <div class="elem">09/2015 - 09/2017</div>
                     <div class="elem">
                         <b>NXP Semiconductors</b><br />
                         Working student<br />
@@ -113,5 +123,18 @@
             <br />
             <span class="fa fa-copyright"></span> 2017 Tronje Krabbe
         </footer>
+    <script type="text/javascript">
+        var age_span = document.getElementById("my_age");
+        var date = new Date();
+
+        // `getMonth` returns 0 for January, 1 for Febuary, etc.
+        if (date.getMonth() < 7) {
+            // `getYear` returns the current year minus 1900. Obviously.
+            age_span.innerHTML = date.getYear() - 95;
+        } else {
+            age_span.innerHTML = date.getYear() - 94;
+        }
+        console.log(date.getMonth());
+    </script>
     </body>
 </html>
