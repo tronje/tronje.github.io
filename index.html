@@ -8,55 +8,112 @@
         <title>Tronje Krabbe</title>
 
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="misc/font-awesome-4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
     </head>
     <body>
         <header class="fadein">
             <h1>Tronje Krabbe</h1>
-            <h5>coder &bull; computer scientist &bull; evidently not a web designer</h5>
+            <h5>software developer</h5>
         </header>
         <div class="container">
             <aside>
-                <h3>Info</h3>
-                <span class="fa fa-birthday-cake fa-fw fadein" aria-hidden="true"></span>1994<br />
-                <span class="fa fa-home fa-fw fadein" aria-hidden="true"></span> Hamburg, Germany<br />
-                <span class="fa fa-globe fa-fw fadein" aria-hidden="true"></span> <a href="https://tron.je">tron.je</a><br />
-                <span class="fa fa-github fa-fw fadein" aria-hidden="true"></span> <a href="https://github.com/tronje">github.com/tronje</a><br />
+                <h3>
+                    <span class="fas fa-info fa-fw info-icon fadein" aria-hidden></span>
+                    info
+                </h3>
+                <span class="fas fa-birthday-cake fa-fw fadein" aria-hidden></span>
+                1994
+                <br />
+                <span class="fas fa-home fa-fw fadein" aria-hidden></span>
+                Hamburg, Germany
+                <br />
+                <span class="fas fa-globe fa-fw fadein" aria-hidden></span>
+                <a href="https://tron.je">tron.je</a>
+                <br />
+                <span class="fab fa-github fa-fw fadein" aria-hidden></span>
+                <a href="https://github.com/tronje">github.com/tronje</a>
+                <br />
+                <br />
 
-                <h3>Contact</h3>
-                <span class="fa fa-mobile fa-fw fadein" aria-hidden="true"></span> +49 151 70028781<br />
-                <span class="fa fa-envelope fa-fw fadein" aria-hidden="true"></span> <a href="mailto:hi@tron.je">hi@tron.je</a><br />
+                <h3>
+                    <span class="fas fa-address-book fa-fw contact-icon fadein" aria-hidden></span>
+                    contact
+                </h3>
+                <span class="fas fa-mobile fa-fw fadein" aria-hidden></span>
+                +49 151 70028781
+                <br />
+                <span class="fas fa-envelope fa-fw fadein" aria-hidden></span>
+                <a href="mailto:hi@tron.je">hi@tron.je</a>
+                <br />
+                <br />
 
-                <h3>Communication</h3>
-                <span class="fa fa-comment fa-fw fadein" aria-hidden="true"></span> german: native speaker<br />
-                <span class="fa fa-comments fa-fw fadein" aria-hidden="true"></span> english: fluent<br />
-                <span class="fa fa-comments-o fa-fw fadein" aria-hidden="true"></span> spanish: enough to order a beer<br />
+                <h3>
+                    <span class="fas fa-comment-alt fa-fw languages-icon fadein"></span>
+                    languages
+                </h3>
+                <span class="fas fa-comment fa-fw fadein" aria-hidden></span>
+                german: native
+                <br />
+                <span class="fas fa-comments fa-fw fadein" aria-hidden></span>
+                english: fluent
+                <br />
+                <span class="far fa-comments fa-fw fadein" aria-hidden></span>
+                spanish: some
+                <br />
+                <br />
 
-                <h3>Technologies</h3>
-                <span class="fa fa-code fa-fw fadein" aria-hidden="true"></span> Python, C, Rust, Ruby, Go, ...<br />
-                <span class="fa fa-file-code-o fa-fw fadein" aria-hidden="true"></span> Cython, NumPy, MPI, Rails, ...<br />
-                <span class="fa fa-database fa-fw fadein" aria-hidden="true"></span> SQLite, PostgreSQL<br />
-                <span class="fa fa-terminal fa-fw fadein" aria-hidden="true"></span> git, Linux, sh, systemd, make, gdb, ...<br />
+                <h3>
+                    <span class="fas fa-rocket fa-fw technologies-icon fadein"></span>
+                    technologies
+                </h3>
+                <span class="fas fa-code fa-fw fadein" aria-hidden></span>
+                <br />
+                Python, C, Rust, Ruby, Go, ...
+                <br />
+                <br />
+                <span class="fas fa-database fa-fw fadein" aria-hidden></span>
+                <br />
+                PostgreSQL, MySQL, SQLite
+                <br />
+                <br />
+                <span class="fas fa-terminal fa-fw fadein" aria-hidden></span>
+                <br />
+                git, Linux, sh, systemd, ...
+                <br />
+                <br />
+                <span class="fab fa-docker fa-fw fadein" aria-hidden></span>
+                <br />
+                Docker, systemd-nspawn
             </aside>
             <main>
-                <h2><span class="fa fa-commenting-o fa-fw bio-icon fadein" aria-hidden="true"></span> Bio</h2>
-                <p>My name's Tronje, I'm <span id="my_age">my age is automatically inserted here with javascript</span> years old,
-                and I love programming, and computer science in general.
-                I'm always looking for interesting new challenges, and if you're looking for someone who values clean, readable and efficient
-                code, as well as good communication and teamwork, feel free to get in touch!
+                <h2>
+                    <span class="far fa-comment-dots fa-fw bio-icon fadein" aria-hidden></span>
+                    bio
+                </h2>
+                <p>I'm <span id="my_age">my age is automatically inserted here with javascript</span> years old,
+                and I do software development. I'm a B.Sc. Computer Science student at Uni Hamburg.
 
-                <p>I've explored quite a few different programming languages; I'd say I'm most comfortable and efficient with Python.
-                Though, at the moment, the language I'm having the most fun with is Rust. I don't mind terribly which language is used for a project,
-                as long as it isn't PHP. Or COBOL, I guess.
+                <p>Python is my go-to language, but I also have experience in C, Rust, Ruby, Go and a few others.
+                I don't mind terribly which language is used for a project, as long as a sensible coding style
+                and code review are part of the process. I prefer using and working on (free and) open-source software.
 
-                <p>My OS of choice is Linux. At home I use Arch Linux for everything; I'm comfortable navigating the Linux userland,
+                <p>My OS of choice is Linux. At home I use Arch Linux for everything. I'm comfortable navigating the Linux userland,
                 working on a Linux system, and deploying software on one.
 
-                <p>In my freetime I cook with a passion, write sometimes silly, sometimes cool code, and pretend like I'm a movie critic.
+                <p>I have worked with git, make, Linux containers, continuous integration services and other tools
+                and services that go hand in hand with modern software development.
+
+                <p>In my freetime I like to cook, write code, play video games, watch movies and make my Linux
+                look pretty. See my <a href="https://github.com/tronje/dotfiles">dotfiles</a> if you're into that.
+
+                <p>I'm open to working-student or part time positions in Hamburg or remote.
 
                 <div class="spacer"><!-- don't judge, remember? --></div>
 
-                <h2><span class="fa fa-graduation-cap fa-fw ed-icon fadein" aria-hidden="true"></span> Education</h2>
+                <h2>
+                    <span class="fas fa-graduation-cap fa-fw ed-icon fadein" aria-hidden></span>
+                    education
+                </h2>
                 <div class="wrapper">
                     <div class="elem">2012 - present</div>
                     <div class="elem">
@@ -77,7 +134,10 @@
                     <div class="elem location"><i>Gym. Grootmoor, Hamburg</i></div>
                 </div>
     
-                <h2><span class="fa fa-briefcase fa-fw work-icon fadein" aria-hidden="true"></span> Experience</h2>
+                <h2>
+                    <span class="fas fa-briefcase fa-fw work-icon fadein" aria-hidden></span>
+                    experience
+                </h2>
                 <div class="wrapper">
                     <div class="elem">10/2017 - present</div>
                     <div class="elem">
@@ -106,24 +166,19 @@
                     <div class="elem location"><i>Hamburg</i></div>
                 </div>
     
-                <h2><span class="fa fa-code fa-fw code-icon fadein" aria-hidden="true"></span> Projects</h2>
+                <h2><span class="fas fa-code fa-fw code-icon fadein" aria-hidden></span> projects</h2>
                 You can find lots of small projects and code samples on my
-                <a href="https://github.com/tronje"><span class="fa fa-github" aria-hidden="true"></span> github profile</a>,
+                <a href="https://github.com/tronje"><span class="fab fa-github" aria-hidden></span> github profile</a>,
                 as well as some katas at
-                <a href="https://gist.github.com/tronje"><span class="fa fa-github" aria-hidden="true"></span> gist.github.com/tronje</a>.
+                <a href="https://gist.github.com/tronje"><span class="fab fa-github" aria-hidden></span> gist.github.com/tronje</a>.
             </main>
         </div>
         <footer>
-            <span class="fa fa-camera" aria-hidden="true"></span>
-            <a href="https://unsplash.com/@ro_ka?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge">
-                Photo by Robert Katzki on Unsplash
-            </a>
-
-            <br />
-            <br />
-            <span class="fa fa-copyright"></span> 2017 Tronje Krabbe
+            <span aria-hidden title="Copyright" class="fas fa-copyright"></span>
+            2018 Tronje Krabbe
         </footer>
     <script type="text/javascript">
+        // calculate my age so it's never wrong, which would be embarrassing
         var age_span = document.getElementById("my_age");
         var date = new Date();
 
@@ -132,7 +187,7 @@
         // `getDate` returns the day of the month. Of course.
         var condition = (date.getMonth() == 7 && date.getDate() < 11) || date.getMonth() < 7;
 
-        // subtract my birth year, plus one extra if I didn't have a birthday this year yet
+        // subtract my birth year, plus one extra if I didn't have a birthday yet this year
         if (condition) {
             // `getYear` returns the current year minus 1900. Obviously.
             age_span.innerHTML = date.getYear() - 95;
