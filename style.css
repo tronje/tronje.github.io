@@ -92,7 +92,7 @@ a:hover {
 
 div.wrapper {
     display: grid;
-    grid-template-columns: 20% 40% 30%;
+    grid-template-columns: 25% 40% 30%;
     grid-gap: 10px;
 }
 
