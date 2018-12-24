@@ -58,6 +58,11 @@ header h5 {
     padding-bottom: 2em;
 }
 
+.monospace {
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
 aside {
     float: left;
     clear: left;
