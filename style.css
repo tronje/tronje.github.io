@@ -108,34 +108,22 @@ div.spacer {
     padding-top: 1em;
 }
 
-.info-icon {
+.color-green {
     color: var(--green);
 }
 
-.contact-icon {
-    color: var(--green);
-}
-
-.languages-icon {
-    color: var(--green);
-}
-
-.technologies-icon {
-    color: var(--green);
-}
-
-.bio-icon {
+.color-red {
     color: var(--red);
 }
 
-.ed-icon {
+.color-yellow {
     color: var(--yellow);
 }
 
-.work-icon {
+.color-cyan {
     color: var(--cyan);
 }
 
-.code-icon {
+.color-magenta {
     color: var(--magenta);
 }
