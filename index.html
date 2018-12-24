@@ -12,8 +12,7 @@
     </head>
     <body>
         <header>
-            <h1>Tronje Krabbe</h1>
-            <h5>software developer</h5>
+            <h1 id="typewriter">Tronje Krabbe</h1>
         </header>
         <div class="container">
             <aside>
@@ -211,23 +210,30 @@
             <span aria-hidden title="Copyright" class="fas fa-copyright"></span>
             2018 Tronje Krabbe
         </footer>
-    <script type="text/javascript">
-        // calculate my age so it's never wrong, which would be embarrassing
-        var age_span = document.getElementById("my_age");
-        var date = new Date();
-
-        // either it's August, but before the 11th, or it's not yet August
-        // `getMonth` returns 0 for January, 1 for Febuary, etc.
-        // `getDate` returns the day of the month. Of course.
-        var condition = (date.getMonth() == 7 && date.getDate() < 11) || date.getMonth() < 7;
-
-        // subtract my birth year, plus one extra if I didn't have a birthday yet this year
-        if (condition) {
-            // `getYear` returns the current year minus 1900. Obviously.
-            age_span.innerHTML = date.getYear() - 95;
-        } else {
-            age_span.innerHTML = date.getYear() - 94;
-        }
-    </script>
     </body>
+    <script type="text/javascript">
+        // Make the h1 at the top appear like it is being typed
+        var i = 0;
+        var elem = document.getElementById("typewriter");
+        var txt = elem.innerHTML;
+        elem.innerHTML = "";
+        var speed = 70;
+
+        var span = document.createElement("span");
+        span.className = "blink";
+        span.innerHTML = "|";
+        elem.appendChild(span);
+
+        function typeWriter() {
+            if (i < txt.length) {
+                var letter = document.createTextNode(txt.charAt(i));
+                elem.insertBefore(letter, span);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                clearTimeout(typeWriter);
+            }
+        }
+        document.onload = typeWriter();
+    </script>
 </html>
