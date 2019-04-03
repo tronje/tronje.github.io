@@ -12,7 +12,7 @@
     </head>
     <body>
         <header>
-            <h1 id="typewriter">Tronje Krabbe</h1>
+            <h1>Tronje Krabbe</h1>
         </header>
         <div class="container">
             <aside>
@@ -211,29 +211,4 @@
             2018 Tronje Krabbe
         </footer>
     </body>
-    <script type="text/javascript">
-        // Make the h1 at the top appear like it is being typed
-        var i = 0;
-        var elem = document.getElementById("typewriter");
-        var txt = elem.innerHTML;
-        elem.innerHTML = "";
-        var speed = 70;
-
-        var span = document.createElement("span");
-        span.className = "blink";
-        span.innerHTML = "|";
-        elem.appendChild(span);
-
-        function typeWriter() {
-            if (i < txt.length) {
-                var letter = document.createTextNode(txt.charAt(i));
-                elem.insertBefore(letter, span);
-                i++;
-                setTimeout(typeWriter, speed);
-            } else {
-                clearTimeout(typeWriter);
-            }
-        }
-        document.onload = typeWriter();
-    </script>
 </html>
