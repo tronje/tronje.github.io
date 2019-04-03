@@ -34,7 +34,7 @@ header {
     linear-gradient(150deg, var(--bg-c) 12%, transparent 12.5%, transparent 87%, var(--bg-c) 87.5%, var(--bg-c)),
     linear-gradient(30deg, var(--bg-c) 12%, transparent 12.5%, transparent 87%, var(--bg-c) 87.5%, var(--bg-c)),
     linear-gradient(150deg, var(--bg-c) 12%, transparent 12.5%, transparent 87%, var(--bg-c) 87.5%, var(--bg-c)),
-    linear-gradient(60deg, var(--bg-a) 25%, transparent 25.5%, transparent 75%, var(--bg-a) 75%, var(--bg-a)), 
+    linear-gradient(60deg, var(--bg-a) 25%, transparent 25.5%, transparent 75%, var(--bg-a) 75%, var(--bg-a)),
     linear-gradient(60deg, var(--bg-a) 25%, transparent 25.5%, transparent 75%, var(--bg-a) 75%, var(--bg-a));
     background-size:80px 140px;
     background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
@@ -65,13 +65,14 @@ aside {
     line-height: 1.8;
     padding-right: 2em;
     font-size: 1em;
+    max-width: 25%;
 }
 
 main {
     overflow: auto;
     padding-left: 3em;
     border-left: 1px solid var(--bg-b);
-    max-width: 45em;
+    max-width: 75%;
     font-size: 1em;
 }
 
